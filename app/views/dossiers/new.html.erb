@@ -1,0 +1,22 @@
+<div class="container  cocktailpages">
+  <div class="text-center">
+    <h1>Nouveau dossier</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-3 col-sm-6">
+            <%= simple_form_for [@dossier] do |d| %>
+            <%= d.input :name, label: 'Nom du dossier' %>
+            <%= d.input :open, label: "Date d'ouverture du dossier" %>
+            <%= d.select :nature, options_for_select(%w[Abonnement Forfait]), label: 'Nature' %>
+            <%= d.input :price, label: 'Prix' %>
+            <%= d.select :status, options_for_select(%w[Ouvert Archivé]), label: 'Status' %>
+            <%= d.input :client_id, label: 'Client' %>
+            <%= d.input :user_id, label: 'Lead' %>
+            <%= d.submit "add a dossier", class: "btn btn-primary" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+   <%= link_to "back", dossiers_path %>
+  </div>
+</div>

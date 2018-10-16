@@ -1,0 +1,14 @@
+<div class="container home text-center">
+
+
+    <div class="link add">
+      <%= link_to "add", new_dossier_path%>
+    </div>
+
+  <div class="row">
+    <% @dossiers.each do |dossier| %>
+      <li><%=dossier.name%></li>
+    <% end %>
+  </div>
+
+</div>

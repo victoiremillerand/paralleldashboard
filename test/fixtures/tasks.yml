@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  milestone: MyString
+  deadline: 2018-10-15 20:59:45
+  dossier: one
+
+two:
+  milestone: MyString
+  deadline: 2018-10-15 20:59:45
+  dossier: two
